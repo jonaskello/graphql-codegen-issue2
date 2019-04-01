@@ -9,7 +9,9 @@ $ yarn graphql
 Generates this incomplete type for `FooBar` (`Zoo` is missing in the union):
 
 ```ts
+// ... other code
 export type FooBar = Foo | Bar;
+// ... other code
 ```
 
 Printing the joined schema gives the correct type of `FooBar` with `Zoo` included so it seems the joining works:
@@ -36,4 +38,16 @@ type Query {
 type Zoo {
   id: ID!
 }
+```
+
+Also using the `typescript` plugin programatically gives the correct result:
+
+```bash
+$ yarn prog
+```
+
+```ts
+// ... other code
+export type FooBar = Foo | Bar | Zoo;
+// ... other code
 ```
