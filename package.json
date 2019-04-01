@@ -9,6 +9,7 @@
     "@graphql-codegen/typescript": "^1.0.6",
     "@graphql-codegen/typescript-operations": "^1.0.6",
     "@graphql-codegen/typescript-resolvers": "^1.0.6",
+    "@types/graphql": "^14.2.0",
     "ts-node": "^8.0.3",
     "typescript": "^3.4.1"
   },
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "graphql": "gql-gen --config graphql-codegen.yml",
-    "print": "ts-node schema-print.ts"
+    "print": "ts-node schema-print.ts",
+    "visit": "ts-node visit.ts",
+    "prog": "ts-node prog.ts"
   }
 }
