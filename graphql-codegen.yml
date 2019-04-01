@@ -1,5 +1,4 @@
-schema:
-  - "schema-join.ts"
+schema: schema-join.ts
 require: "ts-node/register"
 overwrite: true
 generates:

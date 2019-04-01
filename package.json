@@ -22,6 +22,7 @@
     "graphql": "gql-gen --config graphql-codegen.yml",
     "print": "ts-node schema-print.ts",
     "visit": "ts-node visit.ts",
-    "prog": "ts-node prog.ts"
+    "prog": "ts-node prog.ts",
+    "prog2": "ts-node prog2.ts"
   }
 }
