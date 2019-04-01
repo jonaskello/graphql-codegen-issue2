@@ -1,0 +1,10 @@
+query {
+  fooBar {
+    ... on Foo {
+      id
+    }
+    ... on Bar {
+      id
+    }
+  }
+}

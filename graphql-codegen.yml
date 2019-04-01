@@ -1,0 +1,10 @@
+schema:
+  - "schema-join.ts"
+require: "ts-node/register"
+overwrite: true
+generates:
+  generated.ts:
+    documents: "query.graphql"
+    plugins:
+      - "typescript"
+      - "typescript-operations"

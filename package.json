@@ -1,0 +1,23 @@
+{
+  "name": "graphql-codegen-issue1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@graphql-codegen/add": "^1.0.6",
+    "@graphql-codegen/cli": "^1.0.6",
+    "@graphql-codegen/typescript": "^1.0.6",
+    "@graphql-codegen/typescript-operations": "^1.0.6",
+    "@graphql-codegen/typescript-resolvers": "^1.0.6",
+    "ts-node": "^8.0.3"
+  },
+  "dependencies": {
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.4"
+  },
+  "scripts": {
+    "graphql": "gql-gen --config graphql-codegen.yml",
+    "print": "ts-node schema-print.ts"
+  }
+}
