@@ -7,4 +7,3 @@ generates:
     documents: "query.graphql"
     plugins:
       - "typescript"
-      - "typescript-operations"

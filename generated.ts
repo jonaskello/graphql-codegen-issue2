@@ -25,12 +25,3 @@ export type Query = {
 export type Zoo = {
   id: Scalars["ID"];
 };
-export type Unnamed_1_QueryVariables = {};
-
-export type Unnamed_1_Query = { __typename?: "Query" } & {
-  fooBar: Array<
-
-      | ({ __typename?: "Foo" } & Pick<Foo, "id">)
-      | ({ __typename?: "Bar" } & Pick<Bar, "id">)
-  >;
-};
