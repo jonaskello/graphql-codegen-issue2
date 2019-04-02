@@ -7,6 +7,6 @@ import { parse, printSchema } from "graphql";
 const builtSchema = buildSchemaFromTypeDefinitions([schema1, schema2]);
 
 // This fixes it!!
-const schema = parse(printSchema(builtSchema));
+// const schema = parse(printSchema(builtSchema));
 
 export default schema;
